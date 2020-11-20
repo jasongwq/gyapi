@@ -16,4 +16,4 @@ RUN git clone \
 RUN cp config_example.json ../config.json
 RUN npm install --production
 RUN npm install -g ykit
-
+RUN npm -i install yapi-plugin-export-docx-data
