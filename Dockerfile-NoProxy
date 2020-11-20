@@ -1,7 +1,4 @@
 FROM node:7.6
-RUN sed -i "s/deb.debian.org/mirrors.aliyun.com/g" /etc/apt/sources.list \
-    && sed -i "s/security.debian.org/mirrors.aliyun.com/g" /etc/apt/sources.list
-
 RUN apt update
 RUN apt install -y ca-certificates curl wget cmake git bash python make gcc g++ autoconf automake file nasm \
   && update-ca-certificates
