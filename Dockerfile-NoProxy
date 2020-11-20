@@ -19,3 +19,4 @@ RUN git clone \
 RUN cp config_example.json ../config.json
 RUN npm install --production
 RUN npm install -g ykit
+
