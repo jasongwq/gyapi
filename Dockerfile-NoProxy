@@ -10,7 +10,7 @@ RUN apt install -y ca-certificates curl wget cmake git bash python make gcc g++ 
 ENV YAPI_VERSION=1.9.2
 WORKDIR /yapi/vendors
 
-RUN https_proxy=http://192.168.31.5:10809 git clone \
+RUN git clone \
   --branch "v${YAPI_VERSION}" \
   --single-branch \
   --depth 1 \
